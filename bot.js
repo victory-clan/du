@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const Bako = ['413597534187945986','413597534187945986'];
+const Bako = ['406876486880985141','406876486880985141'];
 
 
   client.on('message', Bako => {
