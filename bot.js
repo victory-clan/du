@@ -1,31 +1,31 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const iKhaled = ['413597534187945986','413597534187945986'];
+const Bako = ['413597534187945986','413597534187945986'];
 
 
-  client.on('message', Khaled => {
-    var argresult = Khaled.content.split(` `).slice(1).join(' ');
-      if (!iKhaled.includes(Khaled.author.id)) return;
+  client.on('message', Bako => {
+    var argresult = Bako.content.split(` `).slice(1).join(' ');
+      if (!Bako.includes(Khaled.author.id)) return;
   
-      if (Khaled.content.startsWith('$wt')) {
+      if (Bako.content.startsWith('$wt')) {
         client.user.setActivity(argresult, {type:'WATCHING'});
           client.user.setStatus("dnd")
           Khaled.channel.send(` ** Done. :white_check_mark: ** `)
-      } else //Khaled 
-      if (Khaled.content.startsWith('$ls')) {//Khaled
+      } else //Bako 
+      if (Bako.content.startsWith('$ls')) {//Khaled
           client.user.setActivity(argresult , {type:'LISTENING'});
             client.user.setStatus("idle")
             Khaled.channel.send(` ** Done. :white_check_mark: ** `)
-      } else //Khaled
-          if (Khaled.content.startsWith('$st')) {
+      } else //Bako
+          if (Bako.content.startsWith('$st')) {
             client.user.setGame(argresult, "https://www.twitch.tv/ikhaled321");
               client.user.setStatus("dnd")
-              Khaled.channel.send(` ** Done. :white_check_mark: ** `)//Khaled
+              Bako.channel.send(` ** Done. :white_check_mark: ** `)//Bako
       } else 
-      if (Khaled.content.startsWith('$pl')) {
-        client.user.setActivity(argresult , {type:'PLAYING'});//Khaled
+      if (Bako.content.startsWith('$pl')) {
+        client.user.setActivity(argresult , {type:'PLAYING'});//Bako
          client.user.setStatus("idle")
-         Khaled.channel.send(` ** Done. :white_check_mark: ** `)
+         Bako.channel.send(` ** Done. :white_check_mark: ** `)
        }
   
   });
